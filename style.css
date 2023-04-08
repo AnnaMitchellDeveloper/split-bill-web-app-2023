@@ -19,13 +19,18 @@ h1 {
 input {
   padding: 5px;
 }
+footer,
+footer a {
+  color: #f7dbf0;
+}
+
 .container {
   background-color: rgba(94, 97, 93, 0.9);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 600px;
-  height: 725px;
+  height: 670px;
   border-radius: 40px;
   color: white;
 }
@@ -35,10 +40,10 @@ input {
 .billSplit,
 .totalTip,
 .totalAmount {
-	background-color: rgba(147, 198, 142, 0.9);
-	margin: 20px;
-	padding: 20px;
-	border-radius: 10px;
+  background-color: rgba(147, 198, 142, 0.9);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
 }
 #addTip {
   background: #78dec7;
