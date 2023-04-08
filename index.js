@@ -1,17 +1,25 @@
 const calculateButton = document.querySelector("#calculateBtn");
 calculateButton.addEventListener("click", calculateAmount);
 
+const tipButton = document.querySelector("#addTip");
+tipButton.addEventListener("click", showTip);
+
+function showTip(event){
+	event.preventDefault();
+	tip.style.display = "block";
+}
+
 function calculateAmount(event) {
   event.preventDefault();
   const billInput = document.querySelector("#bill").value;
   const numberOfPeopleInput = document.querySelector("#people").value;
   const tipInput = document.querySelector("#tip").value;
 
-  if (billInput === "" || numberOfPeopleInput === "") {
+  if (billInput === "" || numberOfPeopleInput === "" || numberOfPeopleInput < 1 || billInput < 1) {
     Swal.fire({
       icon: "error",
-      title: "Oops...",
-      text: "Something went wrong!",
+      title: "Error",
+      text: "Please, enter your information!",
     });
   }
 
