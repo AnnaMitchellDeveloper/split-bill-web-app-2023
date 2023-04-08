@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>💸 Let's Split Our Bill</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Split Our Bill!</h1>
+      <form>
+        <p>Bill 💰</p>
+        <span>💲</span>
+        <input id="bill" type="text" placeholder="Bill" />
+        <p>😎 Number of people</p>
+        <input type="text" id="people" placeholder="How many people?" />
+        <p>💖 Did you like our service?</p>
+        <button id="addTip">Add a tip</button>
+        <select id="tip">
+          <option disabled>Select an option</option>
+          <option>Wow! 30% 💖</option>
+          <option>Good service!20% 💙</option>
+          <option>It was ok!10% 🙂</option>
+          <option>No tip!</option>
+        </select>
+        <button id="calculateBtn">Calculate</button>
+      </form>
+		<div class="showTotalAmountToPay">
+			<div class="billSplit">
+				<p>Bill</p>
+				<span>$</span>
+				<span id="dividedBill"></span>
+				<span>per person</span>
+			</div>
+			<div class="totalTip">
+				<p>Tip</p>
+				<span>$</span>
+				<span id="dividedTip"></span>
+				<span>per person</span>
+			</div>
+			<div class="totalBill">
+				<p>Total</p>
+				<span>$</span>
+				<span id="billAndTip"></span>
+				<span>per person</span>
+			</div>
+		</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
