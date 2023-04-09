@@ -61,3 +61,8 @@ footer a {
 #tip {
   display: none;
 }
+@media all and (max-width:800px) {
+  .container {
+    width: 450px;
+  }
+}
